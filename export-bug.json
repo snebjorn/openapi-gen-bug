@@ -1,0 +1,28 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "",
+    "version": ""
+  },
+  "paths": {
+    "/Foos/{Param1}/Bars": {
+      "parameters": [
+        {
+          "name": "Param1",
+          "in": "path",
+          "required": true,
+          "description": "",
+          "schema": { "type": "string" }
+        }
+      ],
+      "get": {
+        "tags": ["Tag1", "Tag2"],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    }
+  }
+}
