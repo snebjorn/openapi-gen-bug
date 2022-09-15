@@ -5,10 +5,14 @@
   "private": true,
   "scripts": {
     "gen": "rimraf output-6.1.0 && openapi-generator-cli generate",
-    "cli": "openapi-generator-cli"
+    "cli": "openapi-generator-cli",
+    "err": "tsc output-6.1.0/compile-bug/api/default.service.ts --noEmit --experimentalDecorators --skipLibCheck --lib ES2022 --strictNullChecks"
   },
   "devDependencies": {
+    "@angular/common": "^14.2.2",
+    "@angular/core": "^14.2.2",
     "@openapitools/openapi-generator-cli": "^2.5.2",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "typescript": "^4.8.3"
   }
 }

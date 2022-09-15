@@ -26,6 +26,14 @@
         "generatorName": "typescript-angular",
         "output": "output-6.1.0/#{name}",
         "inputSpec": "anyof-bug.json"
+      },
+      "compile-bug": {
+        "generatorName": "typescript-angular",
+        "output": "output-6.1.0/#{name}",
+        "inputSpec": "compile-bug.json",
+        "additionalProperties": {
+          "queryParamObjectFormat": "json"
+        }
       }
     }
   }
