@@ -2,16 +2,16 @@
   "$schema": "./node_modules/@openapitools/openapi-generator-cli/config.schema.json",
   "spaces": 2,
   "generator-cli": {
-    "version": "6.0.1",
+    "version": "6.1.0",
     "generators": {
       "import-bug": {
         "generatorName": "typescript-angular",
-        "output": "output-6.0.1/#{name}",
+        "output": "output-6.1.0/#{name}",
         "inputSpec": "import-bug.json"
       },
       "export-bug": {
         "generatorName": "typescript-angular",
-        "output": "output-6.0.1/#{name}",
+        "output": "output-6.1.0/#{name}",
         "inputSpec": "export-bug.json",
         "additionalProperties": {
           "useSingleRequestParameter": "true"
@@ -19,8 +19,13 @@
       },
       "join-bug": {
         "generatorName": "typescript-angular",
-        "output": "output-6.0.1/#{name}",
+        "output": "output-6.1.0/#{name}",
         "inputSpec": "join-bug.json"
+      },
+      "anyof-bug": {
+        "generatorName": "typescript-angular",
+        "output": "output-6.1.0/#{name}",
+        "inputSpec": "anyof-bug.json"
       }
     }
   }

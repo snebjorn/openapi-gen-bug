@@ -1,0 +1,38 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "",
+    "version": ""
+  },
+  "paths": {
+    "/Foos": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/foo"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "foo": {
+        "type": "object",
+        "properties": {
+          "bar": {
+            "anyOf": [{ "type": "number" }, { "type": "string" }],
+            "description": "This is the description for bar"
+          }
+        }
+      }
+    }
+  }
+}
