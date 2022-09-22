@@ -34,6 +34,14 @@
         "additionalProperties": {
           "queryParamObjectFormat": "json"
         }
+      },
+      "object-format-json-bug": {
+        "generatorName": "typescript-angular",
+        "output": "output-6.1.0/#{name}",
+        "inputSpec": "object-format-json-bug.json",
+        "additionalProperties": {
+          "queryParamObjectFormat": "json"
+        }
       }
     }
   }
